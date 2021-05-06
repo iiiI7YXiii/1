@@ -1,0 +1,314 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>CSS. Часть №8 (позиционирование)</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+		<header>
+			<div class="top-header">
+				<div class="conteiner">
+					<ul class="option">
+						<li class="lang">
+							<a href="">English</a>
+							<ul class="lang-option">
+								<li><a href="#">Russian</a></li>
+								<li><a href="#">Dutch</a></li>
+								<li><a href="#">French</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="contact-center">Contact Center</a>
+						</li>
+						<li class="profile"><a href="#">Country Profile</a>
+							<ul class="profile-option">
+								<li><a href="#">Country Profile</a></li>
+								<li><a href="#">Country Profile</a></li>
+							   <li><a href="#">Country Profile</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="bottom-header">
+				<div class="conteiner">
+					<img src="img/dhl_logo.png" alt="" class="logo">
+						<ul class="menu">
+							<li><a href="#">Express</a></li>
+							<li><a href="#">Parcel & Ecommerce</a></li>
+							<li><a href="#">Logistics</a></li>
+							<li><a href="#">Mail</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+						<form action="get" class="search">
+							<input type="text" placeholder="">
+							<button type="submit"></button>
+						</form>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="banner">
+				<div class="conteiner">
+					<h1>We Deliver <br> With Speed</h1>
+					<p>
+						When an unknown printer took a galley of type and scrambled <br>
+						it to make a type specimen book. It has survived not only five centuries
+					</p>
+					<div class="title">
+						Amazing   <span>.</span>    Quick     <span>.</span>   24/7 Supports
+					</div>
+					<div class="battons">
+						<button class="btn">Learn More</button>
+						<button class="btn">dhl worldwide</button>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="conteiner">
+					<h2>Awesome Services</h2>
+					<p class="text-fon">SERVICES</p>
+					<div class="services__items">
+						<div class="items">
+							<img src="img/image1.jpg" alt="">
+							<h4>Express Services</h4>
+							<p>
+							When an unknown printer took a galley of type and scrambled it to make a type specimen.	
+							</p>
+							<button class="read">Read More </button>
+						</div>
+						<div class="items">
+							<img src="img/servis2.jpg" alt="">
+							<h4>parcel & ecommerce</h4>
+							<p>
+								When an unknown printer took a galley of type and scrambled it to make a type specimen.
+							</p>
+							<button class="read">Read More </button>
+						</div>
+						<div class="items">
+							<img src="img/servis3.jpg" alt="">
+							<h4>frieght transport</h4>
+							<p>
+								When an unknown printer took a galley of type and scrambled it to make a type specimen.
+							</p>
+							<a href="#" class="read">Read More</a>
+						</div>
+						<div class="items">
+							<h4 class="world">DHl Worldwide</h4>
+							<p>
+								When an unknown prot printer type and scra
+							</p>
+							<form action="#" method="get" class="location">
+								<select name="" id="select" class="select">
+									<option value="">Location</option>
+									<option value="">Action</option>
+									<option value="">Loca</option>
+								</select>
+								<label class="label" for="select">></label>
+								<button type="submit" class="btn">explore</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="slider">
+				<h2>One of the best international service provider</h2>
+				<button class="play"></button>
+				<div class="slider-items">
+					<div class="slaiders">
+						<img src="img/slider1.jpg" alt="">
+						<h4>Aerospace Provider</h4>
+						<ul>
+							<li>Airlines unknown specimen.</li>
+							<li>It has survived.</li>
+							<li>Make a type specimen book.</li>
+							<li>When an unknown printer took.</li>
+						</ul>
+					</div>
+					<div class="slaiders">
+						<img src="img/slider2.jpg" alt="">
+						<h4>Poppins Proved</h4>
+						<ul>
+							<li>When an unknown printer took.</li>
+							<li>Make a type specimen book.</li>
+							<li>It has survived.</li>
+							<li>Airlines unknown specimen.</li>
+						</ul>
+					</div>
+					<div class="slaiders">
+						<img src="img/slider3.jpg" alt="">
+						<h4>Airline Specimen</h4>
+						<ul>
+							<li>When an unknown printer took.</li>
+							<li>Make a type specimen book.</li>
+							<li>It has survived.</li>
+							<li>Airlines unknown specimen.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="form">
+				<div class="forms">
+					<input class="tabs" type="radio" id="express" name="tabs" checked>
+					<label class="expressl" for="express">express</label>
+					<input class="tabs" type="radio" id="logistics" name="tabs">
+					<label class="logisticsl" for="logistics">logistics</label>
+					<form action="#" method="post" class="express" id="form1">
+						<div class="track">
+							<input class="track__input" type="checkbox" id="track">
+							<label class="track__label" for="track">Track your shipment</label>
+							<div class="track__choise">
+								<p>International Services to Another Country</p>
+								<div>
+									<input class="track__choise__1" name="track__choise" type="radio" id="emergency">
+									<label class="track__choise__1__label" for="emergency">Emergency</label>
+								</div>
+								<div>
+									<input class="track__choise__2" name="track__choise" type="radio" id="time">
+									<label class="track__choise__2__label" for="time">Time Critical</label>
+								</div>
+								<div>
+									<input class="track__choise__3" name="track__choise" type="radio" id="less">
+									<label class="track__choise__3__label" for="less">Less Urgent</label>
+								</div>
+							</div>
+						</div>
+						<div class="track">
+			 				<input class="track__input" type="checkbox" id="new">
+							<label class="track__label" for="new">New login</label>
+							<div class="track__choise">
+								<p>International Services to Another Country</p>
+								<div>
+									<input class="track__choise__1" name="track__choise" type="radio" id="emergency2">
+									<label class="track__choise__1__label" for="emergency2">Emergency</label>
+								</div>
+								<div>
+									<input class="track__choise__2" name="track__choise" type="radio" id="time2">
+									<label class="track__choise__2__label" for="time2">Time Critical</label>
+								</div>
+								<div>
+									<input class="track__choise__3" name="track__choise" type="radio" id="less2">
+									<label class="track__choise__3__label" for="less2">Less Urgent</label>
+								</div>
+							</div>
+						</div>
+						<div class="track">
+			 				<input class="track__input" type="checkbox" id="find">
+							<label class="track__label" for="find">Find dhl point</label>
+							<div class="track__choise">
+								<p>International Services to Another Country</p>
+								<div>
+									<input class="track__choise__1" name="track__choise" type="radio" id="emergency3">
+									<label class="track__choise__1__label" for="emergency3">Emergency</label>
+								</div>
+								<div>
+									<input class="track__choise__2" name="track__choise" type="radio" id="time3">
+									<label class="track__choise__2__label" for="time3">Time Critical</label>
+								</div>
+								<div>
+									<input class="track__choise__3" name="track__choise" type="radio" id="less3">
+									<label class="track__choise__3__label" for="less3">Less Urgent</label>
+								</div>
+							</div>
+						</div>
+						<div class="track track-last">
+			 				<input class="track__input" type="checkbox" id="service">
+							<label class="track__label" for="service">find a service</label>
+							<div class="track__choise">
+								<p>International Services to Another Country</p>
+								<div>
+									<input class="track__choise__1" name="track__choise" type="radio" id="emergency4">
+									<label class="track__choise__1__label" for="emergency4">Emergency</label>
+								</div>
+								<div>
+									<input class="track__choise__2" name="track__choise" type="radio" id="time4">
+									<label class="track__choise__2__label" for="time4">Time Critical</label>
+								</div>
+								<div>
+									<input class="track__choise__3" name="track__choise" type="radio" id="less4">
+									<label class="track__choise__3__label" for="less4">Less Urgent</label>
+								</div>
+							</div>
+						</div>
+						<div class="express__btn">
+							<button type="reset" class="btn">reset</button>
+							<button type="submit" class="btn">submit</button>
+						</div>
+					</form>
+					<form action="#" class="logistics" id="form2">
+						<input type="text" name="point1" class="logistics__point" required="" placeholder="Departure point">
+						<input type="text" name="point2" class="logistics__point" required=""  placeholder="Point of destination">
+						<textarea name="comments" id="" class="logistics__comment" placeholder="Comment"></textarea>
+						<div class="express__btn">
+							<button type="reset" class="btn2" value="сбросить">reset</button>
+							<button type="submit" class="btn2">submit</button>
+						</div>
+					</form>
+				</div>
+				<img src="img/formimg.jpg" alt="">
+			 </section>
+			<section class="excellence">
+				<div class="conteiner">
+					<div class="excellence__description">
+						<h3>Excellence. Simply delivered.</h3>
+						<p>
+							International express deliveries; global freight forwarding by air, sea, road and rail;<br>
+							warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;<br>
+							and other customized logistic services – with everything DHL does, we <br>	
+							help connect people and improve their lives.
+						</p>
+					</div>
+					<div class="excellence__button">
+						<button class="excellence__button__learn">learn more</button>
+					</div>
+				</div>
+			</section>
+			<section class="our-client">
+				<a href="#" class="client1"><img src="img/client1.png"></a>				
+				<a href="#" class="client2"><img src="img/client2.png"></a>
+				<a href="#" class="client3"><img src="img/client3.png"></a>
+				<a href="#" class="client4"><img src="img/client4.png"></a>
+			</section>
+		</main>
+		<footer>
+			<div class="contact">
+				<h4>Contact Center</h4>
+				<ul>
+					<li>DHL Express</li>
+					<li>DHL Parcel & eCommerce</li>
+					<li>DHL Global Forwarding</li>
+					<li>DHL Freight</li>
+					<li>DHL Supply Chain</li>
+				</ul>
+			</div>
+			<div class="about">
+				<h4>About Us</h4>
+				<ul>
+					<li>Partnerships</li>
+					<li>Company Portrait</li>
+					<li>DHL Global Forwarding</li>
+					<li>Green Solutions</li>
+					<li>Innovation</li>
+				</ul>
+			</div>
+			<div class="social">
+				<h4>Social Media</h4>
+				<ul>
+					<li>Facebook</li>
+					<li>dribbble</li>
+					<li>behance</li>
+					<li>gmail</li>
+					<li>twitter</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+	
